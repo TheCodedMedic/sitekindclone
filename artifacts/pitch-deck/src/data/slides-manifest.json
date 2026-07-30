@@ -1,0 +1,82 @@
+[
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131401",
+    "position": 1,
+    "filepath": "src/pages/slides/Title.tsx",
+    "title": "sitekind",
+    "description": "Title slide with tagline and hero image",
+    "speakerNotes": "- Introduce yourself and sitekind: the fully automated digital agency for local service businesses.\n- One-liner: website, AI voice receptionist, and automated SEO — built and managed for the owner, from $150/mo.\n- Set the frame: this is what an agency looks like when AI does the work — agency results at software prices.\n- Keep it short (15–20 seconds); the story starts on the next slide."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131402",
+    "position": 2,
+    "filepath": "src/pages/slides/Problem.tsx",
+    "title": "The Problem",
+    "description": "Local service businesses lose work they never see",
+    "speakerNotes": "- Paint the picture: a plumber or salon owner wins or loses on Google, but a real agency site starts at five figures and takes months.\n- Missed calls = missed revenue: owners are on the job, not by the phone — every unanswered call books with the next result on the list.\n- DIY tools don't fix it: SEO, content, ads, and reviews demand weekly attention; they hand owners a second job.\n- Key takeaway: this work is essential, but no one is positioned to do it for them at a price they can afford."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131403",
+    "position": 3,
+    "filepath": "src/pages/slides/Solution.tsx",
+    "title": "The Solution",
+    "description": "An entire agency, run by automation",
+    "speakerNotes": "- The answer: an entire agency, run by automation — not another tool the owner has to learn.\n- sitekind generates a complete, conversion-optimized website from the business's real data, then keeps phones answered and rankings climbing.\n- Hit the three proof points: live in 24 hours, from $150/mo (a fraction of agency retainers), zero effort for the owner.\n- Emphasize 'for the owner, not by the owner' — that's the wedge against DIY builders."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131404",
+    "position": 4,
+    "filepath": "src/pages/slides/HowItWorks.tsx",
+    "title": "How It Works",
+    "description": "Preview first, pay later — three steps",
+    "speakerNotes": "- Lead with the model: preview first, pay later — we build the site before the owner buys.\n- Step 1: we pull the Google Business Profile (photos, reviews, hours, services) and generate the full site with zero forms.\n- Step 2: a 24/7 AI voice agent answers calls, books appointments, and texts back missed calls within 30 seconds.\n- Step 3: weekly SEO content and Google Maps optimization push rankings up on autopilot.\n- Note the sales insight: showing a finished site removes almost all buying friction."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131405",
+    "position": 5,
+    "filepath": "src/pages/slides/Product.tsx",
+    "title": "The Product",
+    "description": "Four AI systems, one platform",
+    "speakerNotes": "- Four AI systems on one platform — each replaces a role an agency would bill for.\n- Website generation: 10–15 page conversion-optimized site written from real business data, live in 24 hours.\n- Voice receptionist: answers every call, books appointments, texts back the ones it misses — never sleeps.\n- Automated SEO & content: weekly posts and pages, AI-written and quality-judged before publishing.\n- Google Maps dominance: citations, reviews, and local signals managed continuously, with a Top-3 Maps guarantee on the flagship plan."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131406",
+    "position": 6,
+    "filepath": "src/pages/slides/ClientExperience.tsx",
+    "title": "The Client Experience",
+    "description": "Demo wizard, client portal, ownership",
+    "speakerNotes": "- The sale starts with a finished preview, not a proposal: owners type their business name and see their own completed website.\n- After launch, everything lives in one client portal — calls, bookings, content, rankings, plus monthly performance reports.\n- Ownership, not lock-in: clients own their website outright and can cancel the low annual maintenance anytime.\n- Point out that ownership builds trust and is a deliberate contrast to agencies and DIY platforms that hold sites hostage."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131407",
+    "position": 7,
+    "filepath": "src/pages/slides/Market.tsx",
+    "title": "The Market",
+    "description": "Positioned between DIY tools and traditional agencies",
+    "speakerNotes": "- Walk the spectrum: traditional agencies ($10k+, months of lead time), freelancers (one person, no ongoing SEO or phones), DIY builders (cheap, but the website becomes the owner's second job).\n- sitekind sits in the open middle: agency-grade output at software prices, from $150/mo — because AI does the work.\n- The gap exists because agency economics required humans; automation collapses that cost structure.\n- Optional add: millions of local service businesses in the US alone sit in this underserved middle."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131408",
+    "position": 8,
+    "filepath": "src/pages/slides/Pricing.tsx",
+    "title": "Pricing",
+    "description": "Four plans, one upgrade path",
+    "speakerNotes": "- Four plans, one upgrade path — customers enter cheap and grow into bigger packages.\n- Starter, $150/mo: AI-built 5–8 page site, hosted, secured, maintained — the low-friction entry point.\n- Core Agency, $5,000 first year then $1,500/yr (financeable at $375/mo): premium site plus weekly SEO, ads setup, citations.\n- AI Voice Add-on, $3,500/yr: 24/7 receptionist, missed-call text-back, chatbot, call analytics.\n- Mega Package, $15,000: 20-week campaign with a Top-3 Google Maps guarantee — or we keep working free. The guarantee closes deals."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131409",
+    "position": 9,
+    "filepath": "src/pages/slides/Traction.tsx",
+    "title": "Traction",
+    "description": "Key metrics so far",
+    "speakerNotes": "- Let the numbers land, then add one line of color each.\n- $5.4M+ revenue generated across portfolio brands — the playbook already works.\n- 24 hours from signup to live website — the speed claim is real, not aspirational.\n- 91.7% payment success rate — customers pay and stay.\n- 90% cheaper than a human receptionist — the AI voice agent's unit economics in one line."
+  },
+  {
+    "id": "0b2f6a4e-1c3d-4e5f-8a9b-101112131410",
+    "position": 10,
+    "filepath": "src/pages/slides/Vision.tsx",
+    "title": "The Vision",
+    "description": "Closing slide with vision statement",
+    "speakerNotes": "- Zoom out: millions of main-street businesses still run on word of mouth and a Facebook page.\n- The vision: give each of them the website, phones, and rankings of a company ten times their size — automatically.\n- Close with confidence, then make the ask (investment, partnership, or intro) and point to sitekind.ai.\n- Pause for questions — pricing and traction slides usually draw the most follow-ups."
+  }
+]

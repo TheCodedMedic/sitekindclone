@@ -1,0 +1,68 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "a5_CxZuBqXM_l5XcCPJx-"
+uri = "file://.local/outputs/Sitekind-Pitch-Deck.pptx"
+type = "slides"
+title = "Sitekind Pitch Deck (PPTX)"
+
+[[outputs]]
+id = "cDGrcp2evvIRg29m3ESHn"
+uri = "file://.local/outputs/Sitekind-Pitch-Deck.pdf"
+type = "pdf"
+title = "Sitekind Pitch Deck (PDF)"
+
+[[outputs]]
+id = "LHzI9D8XY22Tjv5iQgfLY"
+uri = "file://artifacts/sitekind-promo-video/public/audio/bg_music.mp3"
+type = "audio"
+title = "background music"
+
+[[outputs]]
+id = "vWPYeO3beGwuYF14dc2u7"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene1.mp3"
+type = "audio"
+title = "voiceover scene1"
+
+[[outputs]]
+id = "oqSpEdFTRbGibLtQwz888"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene2.mp3"
+type = "audio"
+title = "voiceover scene2"
+
+[[outputs]]
+id = "eqF3khrdRPZr-OW10KH7l"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene3.mp3"
+type = "audio"
+title = "voiceover scene3"
+
+[[outputs]]
+id = "XGwwvZQc8y7wvcZagPeDL"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene4.mp3"
+type = "audio"
+title = "voiceover scene4"
+
+[[outputs]]
+id = "3fA6PUbvbBYDT0Q4tmsXX"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene5.mp3"
+type = "audio"
+title = "voiceover scene5"
+
+[[outputs]]
+id = "JV-ZJzqwlzu5uZyjymYhz"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene6.mp3"
+type = "audio"
+title = "voiceover scene6"
+
+[[outputs]]
+id = "b3KB1y1M171NA14KQKNAy"
+uri = "file://artifacts/sitekind-promo-video/public/audio/vo_scene2_2.mp3"
+type = "audio"
+title = "voiceover scene2 (shortened)"
+
+[[outputs]]
+id = "lF6lh7lBQfWKDYLWzSjKa"
+uri = "file://exports/sitekind-promo.mp4"
+type = "video"
+title = "Sitekind Promo Video (MP4)"

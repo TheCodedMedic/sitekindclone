@@ -1,0 +1,185 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: leads
+    description: Demo and contact lead capture
+paths:
+  /leads:
+    post:
+      operationId: createLead
+      tags: [leads]
+      summary: Capture a demo or contact lead
+      description: Stores a lead submitted from the web or mobile demo wizard / contact form
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LeadCreate"
+      responses:
+        "201":
+          description: Lead stored
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LeadCreated"
+        "400":
+          description: Invalid lead payload
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "429":
+          description: Too many requests from this address
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+    get:
+      operationId: listLeads
+      tags: [leads]
+      summary: List captured leads
+      description: Returns all captured leads, newest first. Requires an authenticated team member.
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: Leads list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  leads:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Lead"
+                required:
+                  - leads
+        "401":
+          description: Missing or invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "403":
+          description: Authenticated but not a team member
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Lead:
+      type: object
+      properties:
+        id:
+          type: integer
+        source:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+          nullable: true
+        businessName:
+          type: string
+          nullable: true
+        message:
+          type: string
+          nullable: true
+        details:
+          type: object
+          additionalProperties: true
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - source
+        - name
+        - email
+        - createdAt
+    LeadCreate:
+      type: object
+      properties:
+        source:
+          type: string
+          enum: [web-demo, web-contact, mobile-demo, mobile-contact]
+        name:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          minLength: 3
+        phone:
+          type: string
+        businessName:
+          type: string
+        message:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+        website:
+          type: string
+          description: Honeypot field — must be left empty. Filled values mark the submission as bot traffic.
+      required:
+        - source
+        - name
+        - email
+    LeadCreated:
+      type: object
+      properties:
+        id:
+          type: integer
+        status:
+          type: string
+      required:
+        - id
+        - status
+    ApiError:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+

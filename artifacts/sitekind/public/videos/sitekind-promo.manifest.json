@@ -1,0 +1,10 @@
+{
+  "sourceHash": "14cf4147d4d78e583cf2693d8da6099da32bbd1959c43821757624fcd904ce6a",
+  "sourceDir": "artifacts/sitekind-promo-video",
+  "exportedFiles": [
+    "sitekind-promo.mp4",
+    "sitekind-promo-poster.jpg"
+  ],
+  "exportedAt": "2026-07-20T20:50:42.831Z",
+  "note": "Written by scripts/promo-video-freshness.mjs update after re-exporting the promo MP4. Do not edit by hand."
+}

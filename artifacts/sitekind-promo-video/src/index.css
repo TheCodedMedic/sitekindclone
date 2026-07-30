@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #c2410c;
+  --color-primary-hover: #9a3412;
+  --color-accent: #0f766e;
+  --color-accent-hover: #115e59;
+  --color-warning: #f59e0b;
+  
+  --color-bg-dark: #1c1712;
+  --color-bg-light: #fffbf5;
+  --color-bg-light-secondary: #ffffff;
+  --color-bg-light-tertiary: #fdf3e7;
+  
+  --color-text-dark-primary: #f7f1e8;
+  --color-text-light-primary: #2a2118;
+  --color-text-light-secondary: #6b5d4f;
+  
+  --color-blush: #fbe7e0;
+  --color-sky: #e3f1f5;
+  --color-mint: #e4f2e8;
+}
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+    --font-code: 'Fira Code', monospace;
+    --font-accent: 'Caveat', cursive;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Base mesh animation */
+@keyframes mesh-drift {
+  0% { transform: translate3d(-3%, -2%, 0) scale(1); }
+  50% { transform: translate3d(2%, 3%, 0) scale(1.06); }
+  100% { transform: translate3d(-2%, 2%, 0) scale(1.02); }
+}
+
+.mesh {
+  position: absolute;
+  inset: -15%;
+  pointer-events: none;
+  filter: blur(70px);
+  opacity: 0.8;
+  background:
+    radial-gradient(34% 38% at 20% 26%, var(--color-blush) 0%, transparent 70%),
+    radial-gradient(30% 34% at 78% 20%, var(--color-sky) 0%, transparent 70%),
+    radial-gradient(36% 40% at 60% 80%, var(--color-mint) 0%, transparent 70%),
+    radial-gradient(24% 28% at 10% 84%, rgb(245 158 11 / 0.14) 0%, transparent 70%);
+  animation: mesh-drift 22s ease-in-out infinite alternate;
+}
+
+/* Paper grain */
+.dot-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.16 0 0 0 0 0.13 0 0 0 0 0.09 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  mask-image: radial-gradient(ellipse 85% 65% at 50% 25%, black 30%, transparent 80%);
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-body { font-family: var(--font-body); }
+.font-code { font-family: var(--font-code); }
+.font-accent { font-family: var(--font-accent); }
+
+.text-ink { color: var(--color-text-light-primary); }
+.text-ink-2 { color: var(--color-text-light-secondary); }

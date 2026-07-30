@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Sitekind"
+version = "1.0.0"
+id = "artifacts/sitekind"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21128
+
+[services.development]
+run = "pnpm --filter @workspace/sitekind run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sitekind", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sitekind/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21128"
+BASE_PATH = "/"

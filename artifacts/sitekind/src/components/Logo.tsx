@@ -1,0 +1,32 @@
+// sitekind lockup — mirrors the approved brand mark (public/brand/
+// sitekind-logo.svg): clementine rounded window with a negative-space heart,
+// and the two-tone "site|kind" wordmark.
+import { Link } from "@tanstack/react-router";
+
+export function Logo({ className = "" }: { className?: string }) {
+  return (
+    <Link
+      to="/"
+      className={`group inline-flex items-center gap-2.5 ${className}`}
+      aria-label="sitekind home"
+    >
+      <span className="relative grid h-9 w-9 place-items-center">
+        <svg viewBox="0 0 36 36" className="h-9 w-9" aria-hidden>
+          {/* Rounded browser window in clementine */}
+          <rect x="1" y="1" width="34" height="34" rx="9" fill="var(--color-primary)" />
+          {/* Browser bar dots in teal + cream */}
+          <circle cx="7.5" cy="7.5" r="1.6" fill="#0F766E" />
+          <circle cx="12.5" cy="7.5" r="1.6" fill="#FFFBF5" opacity="0.85" />
+          {/* Negative-space heart */}
+          <path
+            d="M18 28.2c-.34 0-.68-.12-.95-.36-1.02-.9-4.02-3.44-5.5-5.24-1.4-1.7-1.9-3.1-1.9-4.55 0-2.6 2.02-4.55 4.5-4.55 1.5 0 2.9.74 3.85 1.98.95-1.24 2.35-1.98 3.85-1.98 2.48 0 4.5 1.95 4.5 4.55 0 1.45-.5 2.85-1.9 4.55-1.48 1.8-4.48 4.34-5.5 5.24-.27.24-.61.36-.95.36Z"
+            fill="var(--surface)"
+          />
+        </svg>
+      </span>
+      <span className="font-display text-[1.15rem] font-extrabold tracking-tight text-ink">
+        site<span className="text-[var(--color-primary)]">kind</span>
+      </span>
+    </Link>
+  );
+}
